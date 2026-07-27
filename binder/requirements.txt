@@ -1,0 +1,6 @@
+awkward
+hist
+jupyter-server-proxy
+jupyter-server-mcp
+jupyter-ai-tools
+jupyterlab-commands-toolkit
