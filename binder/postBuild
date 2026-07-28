@@ -14,5 +14,4 @@ $HOME/.pixi/bin/pixi workspace export conda-explicit-spec --platform linux-64 bi
 # Install environment
 mamba install --name notebook --file binder/default_linux-64_conda_spec.txt
 
-mkdir -p ~/.jupyter
-mv config/jupyter_server_config.py ~/.jupyter/jupyter_server_config.py
+pip install jupyter-mcp-server
