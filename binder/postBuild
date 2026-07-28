@@ -14,4 +14,4 @@ $HOME/.pixi/bin/pixi workspace export conda-explicit-spec --ignore-pypi-errors -
 # Install environment
 mamba install --name notebook --file binder/default_linux-64_conda_spec.txt
 
-pip install jupyter-mcp-server
+pip install jupyter-mcp-server==1.1.3
