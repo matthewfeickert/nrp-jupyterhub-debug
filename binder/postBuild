@@ -15,4 +15,4 @@ $HOME/.pixi/bin/pixi workspace export conda-explicit-spec --platform linux-64 bi
 mamba install --name notebook --file binder/default_linux-64_conda_spec.txt
 
 mkdir -p ~/.jupyter
-cp jupyter_server_config.py ~/.jupyter/jupyter_server_config.py
+mv config/jupyter_server_config.py ~/.jupyter/jupyter_server_config.py
