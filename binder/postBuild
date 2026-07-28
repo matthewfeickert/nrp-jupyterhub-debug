@@ -2,17 +2,17 @@
 
 set -ex
 
-# # Install Pixi
-# curl -kfsSL https://pixi.sh/install.sh | bash
-# echo 'eval "$(pixi completion --shell bash)"' >> ~/.bashrc
-# . ~/.bashrc
-# 
-# # Export workspace to conda explicit spec
-# # pixi workspace export conda-explicit-spec --platform linux-64 binder/
-# $HOME/.pixi/bin/pixi workspace export conda-explicit-spec --platform linux-64 binder/
-# 
-# # Install environment
-# mamba install --name notebook --file binder/default_linux-64_conda_spec.txt
+# Install Pixi
+curl -fsSL https://pixi.sh/install.sh | bash
+echo 'eval "$(pixi completion --shell bash)"' >> ~/.bashrc
+. ~/.bashrc
+
+# Export workspace to conda explicit spec
+# pixi workspace export conda-explicit-spec --platform linux-64 binder/
+$HOME/.pixi/bin/pixi workspace export conda-explicit-spec --platform linux-64 binder/
+
+# Install environment
+mamba install --name notebook --file binder/default_linux-64_conda_spec.txt
 
 mkdir -p ~/.jupyter
 cp jupyter_server_config.py ~/.jupyter/jupyter_server_config.py
