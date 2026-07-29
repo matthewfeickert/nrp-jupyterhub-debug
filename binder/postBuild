@@ -9,10 +9,12 @@ echo 'eval "$(pixi completion --shell bash)"' >> ~/.bashrc
 
 # Export workspace to conda explicit spec
 # Need to manually place Pixi on PATH for this script
-$HOME/.pixi/bin/pixi workspace export conda-explicit-spec --platform linux-64 binder/
+$HOME/.pixi/bin/pixi workspace export conda-explicit-spec --ignore-pypi-errors --platform linux-64 binder/
 
 # Install environment
 mamba install --name notebook --file binder/default_linux-64_conda_spec.txt
+
+pip install marimo-jupyter-extension==0.3.0
 
 mkdir -p ~/.jupyter
 mv config/jupyter_server_config.py ~/.jupyter/jupyter_server_config.py

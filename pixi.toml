@@ -26,3 +26,6 @@ cmd = "jupyter lab"
 
 [environments]
 lab = ["lab"]
+
+[pypi-dependencies]
+marimo-jupyter-extension = ">=0.3.0, <0.4"
