@@ -14,7 +14,7 @@ $HOME/.pixi/bin/pixi workspace export conda-explicit-spec --ignore-pypi-errors -
 # Install environment
 mamba install --name notebook --file binder/default_linux-64_conda_spec.txt
 
-pip install marimo-jupyter-extension==0.3.0
+# pip install marimo-jupyter-extension==0.3.0
 
 mkdir -p ~/.jupyter
 mv config/jupyter_server_config.py ~/.jupyter/jupyter_server_config.py
