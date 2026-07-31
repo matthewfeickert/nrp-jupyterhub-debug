@@ -33,3 +33,9 @@ lab = ["lab"]
 
 [pypi-dependencies]
 marimo-jupyter-extension = ">=0.3.0, <0.4"
+
+[target.linux-64.dependencies]
+root_base = ">=6.40.2,<7"
+
+[target.osx-arm64.dependencies]
+root_base = ">=6.40.2,<7"
